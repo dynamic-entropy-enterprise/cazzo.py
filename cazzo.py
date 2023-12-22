@@ -28,7 +28,7 @@ def sleep_millis(millis:int):
     """
     sleep for time specified in milliseconds
 
-    @param millis: the milliseconds to sleep for
+    @param millis the milliseconds to sleep for
     """
 
     sleep(millis/1000)
@@ -44,7 +44,7 @@ def cazzo_draw(length:int):
     """
     disenga un cazzo lungo `length` sul terminale
 
-    @param length: la lunghezza del cazzo
+    @param length la lunghezza del cazzo
     """
 
     print(cazzo_base,end="")
@@ -57,9 +57,11 @@ def cazzo_loop(min_len:int, max_len:int, millis:int):
     """
     disenga un cazzo lungo `length` sul terminale
 
-    @param min_len: la lunghezza del cazzo
-    @param max_len: la lunghezza del cazzo
-    @param millis: periodio di transizione tra lunghezze, in millisecondi
+    @param min_len la lunghezza del cazzo
+    @param max_len la lunghezza del cazzo
+    @param millis periodio di transizione tra lunghezze, in millisecondi
+
+    @see cazzo_draw
     """
     while True:
         def cazzo_loop_iteration(l:int):
