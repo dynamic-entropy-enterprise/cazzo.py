@@ -36,22 +36,23 @@ void clear() {
 
 class Cazzodrawer {
 private:
-    const std::string cazzo_base[7] = {"  +------+   +------+  ",
-                                       " /         V         \\",
-                                       "|          |          |",
-                                       "|          |          |",
-                                       "|          |          |",
-                                       " \\                   /",
-                                       "  +--      +      --+  "};
+    const std::string cazzo_base[8] = {"  +-------+   +-------+   ",
+                                       " /          +          \\",
+                                       "|           |           |",
+                                       "|           |           |",
+                                       "|           |           |",
+                                       " \\                     /",
+                                       "  +- -      +      - -+  ",
+                                       "   +--             --+  "};
 
-    const std::string cazzo_extender="   |               |";
+    const std::string cazzo_extender="    |               |";
 
-    const std::string cazzo_cima[7]= {"   +--           --+  ",
-                                      "  /                 \\",
-                                      "  |                 | ",
-                                      "  \\                 /",
-                                      "   \\       |       / ",
-                                      "    +------|------+   "};
+    const std::string cazzo_cima[7]= {"    +--           --+  ",
+                                      "   /                 \\",
+                                      "   |                 | ",
+                                      "   \\                 /",
+                                      "    \\       |       / ",
+                                      "     +------|------+   "};
 
 public:
     void draw_cazzo(int l) {
