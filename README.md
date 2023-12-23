@@ -37,4 +37,5 @@ python cazzo.py <min-length> <max-length> <time(millis)>
  - parametrizzare la larghezza del cazzo
  - permettere tipi diversi di cazzo (es. circonciso, non circonciso)
  - file di config per il cazzo
+ - possibilità di disegnare vene sul cazzo
  - opzione per far partire "ho litigato con mia moglie" di Gianni Celeste ogni volta che giri lo script

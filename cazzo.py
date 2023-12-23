@@ -55,7 +55,8 @@ def cazzo_draw(length:int):
 
 def cazzo_loop(min_len:int, max_len:int, millis:int):
     """
-    disenga un cazzo lungo `length` sul terminale
+    disenga un cazzo di lunghezza tempo-variabile tra `min_len` e `max_len`
+    sul terminale
 
     @param min_len la lunghezza del cazzo
     @param max_len la lunghezza del cazzo

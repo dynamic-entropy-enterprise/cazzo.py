@@ -57,9 +57,8 @@ private:
 public:
     void draw_cazzo(int l) {
         /* disegna un cazzo lungo `l` sul terminale
-
-           @param l lunghezza del cazzo
-        */
+         * @param l lunghezza del cazzo
+         */
         for(std::string s : Cazzodrawer::cazzo_base) {
             std::cout<<s<<'\n';
         }
@@ -74,6 +73,13 @@ public:
     }
 
     void loop_cazzo(int min_len, int max_len, int millis) {
+        /* disegna sullo schermo un cazzo di lunghezza oscillante nel tempo
+         * tra min_len e max_len
+         * 
+         * @param min_len lunghezza minima del cazzo 
+         * @param man_len lunghezza massima del cazzo
+         * @param millis tick di aggiornamento per la lunghezza del cazzo
+         */
         while(true) {
             for(int i = min_len; i<max_len; ++i) {
                 draw_cazzo(i);
